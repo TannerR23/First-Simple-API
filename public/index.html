@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restful API</title>
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+<body>
+    <h1>RESTful API For Events</h1>
+    <div class="container">
+        <div class="endpoint">
+            <h3>Add event:</h3>
+            <p>Endpoint to add a new event to the database</p>
+            <p><b>CRUD</b>: POST<br><b>Endpoint</b>: /events</p>
+            <br>
+        </div>
+        <div class="endpoint">
+            <h3>Retrieve all events:</h3>
+            <p>Endpoint to retrieve all event data from the database</p>
+            <p><b>CRUD</b>: GET<br><b>Endpoint</b>: /events</p>
+            <br>
+        </div>
+        <div class="endpoint">
+            <h3>Retrieve event by ID:</h3>
+            <p>Endpoint to retrieve a given event by ID</p>
+            <p><b>CRUD</b>: GET<br><b>Endpoint</b>: /events/{id}</p>
+            <br>
+        </div>
+        <div class="endpoint">
+            <h3>Retrieve event by name:</h3>
+            <p>Endpoint to retrieve a given event by name</p>
+            <p><b>CRUD</b>: GET<br><b>Endpoint</b>: /events/by-name/{name}</p>
+            <br>
+        </div>
+        <div class="endpoint">
+            <h3>Update event by id:</h3>
+            <p>Endpoint to update a given event by ID</p>
+            <p><b>CRUD</b>: PUT<br><b>Endpoint</b>: /events/{id}</p>
+            <br>
+        </div>
+        <div class="endpoint">
+            <h3>Delete event by id:</h3>
+            <p>Endpoint to delete a given event by ID</p>
+            <p><b>CRUD</b>: DELETE<br><b>Endpoint</b>: /events/{id}</p>
+            <br>
+        </div>
+        <div class="endpoint">
+            <h3>Delete all events:</h3>
+            <p>Endpoint to delete all events from the database</p>
+            <p><b>CRUD</b>: DELETE<br><b>Endpoint</b>: /events</p>
+            <br>
+        </div>
+    </div>
+    <h1>Postman Example</h1>
+    <div class="postman-container">
+        <div class="img-div">
+            <img src="../images/322-postman-example.png">
+        </div>
+        <p>Above is a postman test for adding an event to the data base.<br>This uses the POST method as data is being sent to create a new event. Within the body of the request is the event data that will be entered into the database. This data is in raw JSON format.</p>
+    </div>
+</body>
+</html>
